@@ -1,0 +1,518 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+ /* corps */
+body{
+  height: 100%;
+  font-family: Montserrat;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  
+}
+
+/* barre de navigation */
+
+header .navbar{
+  height: 60px;
+  background: #0F206D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 62px;
+  padding-right: 62px;
+  /* position: relative;
+  position: fixed; */
+  width: 100%;
+}
+/* header .navbar:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 1;
+  backdrop-filter: blur(20px);
+  z-index: 1;
+} */
+
+/* menu de la navbar */
+
+header .navbar .menu{
+  list-style: none;
+  color: white;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* logo */
+header .navbar img{
+  width: 158px;
+  height: 51px;
+  float: left;
+}
+
+/* hero */
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.galerie {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+ gap: 15px;
+ margin-top: 20px ;
+ padding-right: 62px;
+}
+
+/* selection de toutes les images de la galerie du hero */
+
+.galerie img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* selection de l'image de la commerçante */
+.galerie .gal1{
+  width: 300px; 
+  height: 350px;
+  grid-column: 1;
+  grid-row: 2/ span 3;
+}
+
+/* selection de l'image du charpentier  */
+.galerie .gal2{
+  width: 250px; 
+  height: 350px;
+  grid-column: 2;
+  grid-row: 1/ span 2;
+}
+
+/* selection de l'image du couturier*/
+.galerie .gal3{
+  width: 250px; 
+  height: 165px;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Ttre du hero */
+
+.titre{
+  padding-left: 62px;
+  position: relative;
+  bottom: 20px;
+  height: 300px;
+}
+
+.titre h1{
+  font-size: 58px;
+}
+
+.titre h1{
+  font-size: 48px;
+}
+/* bouton du hero */
+
+.incsription{
+  width: 180px;
+  height: 40px;
+  background-color: #7AAEC1;
+  outline: none;
+  border: none;
+  border-radius:70px;
+  color: #FFF;
+  position: absolute;
+  font-size: 15px; 
+  font-weight: bolder;
+  bottom: 0;
+  box-shadow: 0px 5px 5px 2px rgb(167, 164, 164);
+  cursor: pointer;
+  
+}
+
+/* Section a_propos */
+.a_propos{
+  margin-top: 80px;
+}
+
+/* Container des asides */
+
+.a_propos .container1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  background-image: url(../Images/bgi\ \(8\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  color: white;
+  
+
+}
+
+/* block de video */
+
+.a_propos .container1 .video{
+  height: 400px;
+  width: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* premiere image du block video */
+
+.a_propos .container1 .video .img1{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  display: inline-block;
+  animation: moov 1s ease-in-out alternate infinite;
+  transform: translateY(10px);
+  z-index: 2;
+}
+
+/* deuxième image du block video */
+
+.a_propos .container1 .video .img2{
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  position: absolute;
+  right: 10px;
+  z-index: -0;
+}
+
+/* animation du logo flotant */
+
+@keyframes moov {
+  0%{
+    transform: translateY(10px);
+  }
+
+  100%{
+    transform: translateY(-10px);
+  }
+  
+}
+
+/* block de texte */
+
+.a_propos .container1 .txt_apropos{
+  min-height: 380px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+/* Titre du block de texte a propos */
+
+.a_propos .container1 .txt_apropos h1{
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+/* Section call to action */
+
+.call{
+  margin-top: 0px;
+  background-image: url(../Images/bgi\ \(6\).jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.call .container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  
+  
+}
+
+/* titre de la div call */
+
+.call .container2 .txt_call{
+  min-height: 300px;
+  min-width: 300px;
+  color: #0F206D;
+  position: relative;
+  bottom: 50px;
+  padding-left: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.call .container2 .txt_call h1{
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  
+}
+
+/* image de la div call */
+
+/* bouton de la div call */
+
+.call .container2 .txt_call .incsription2{
+  width: 180px;
+  height: 40px;
+  background-color: #7AAEC1;
+  outline: none;
+  border: none;
+  border-radius:70px;
+  color: #FFF;
+  position: absolute; 
+  font-size: 15px; 
+  font-weight: bolder;
+  bottom: 50px;
+  box-shadow: 0px 5px 5px 2px rgb(167, 164, 164);
+  cursor: pointer;
+  left: 160px;
+}
+
+/* Section OFFRE */
+.offre{
+  position: relative;
+}
+
+.offre .livre img{
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 200px;
+  /* object-fit: cover; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.offre h1{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 28px;
+}
+.offre h1 span{
+  color: #7AAEC1;
+}
+
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+/* div du texte  */
+.container3 .txt_offre{
+  min-height: 200px;
+  max-width: 300px;
+  font-size: 18px;
+}
+
+/* Livre bleu */
+.container3 .txt_offre img{
+  transform: rotateX(-150deg);
+}
+
+.container3 .card{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  padding: 62px;
+}
+/* factorisation des proriétés liées aux deux cartes */
+
+.container3 .card .card1,.card2{
+  background-color: #0F206D;
+  height: 400px;
+  width: 250px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+ 
+}
+
+/* première carte marqueting */
+
+.container3 .card .card1{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.container3 .card .card2{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  position: relative;
+  top: 70px;
+}
+
+/* Section pourquoi vous inscrire */
+
+.why{
+  margin-top: 80px;
+}
+
+.why h1 span{
+  color: #7AAEC1;
+}
+
+.why h1{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.why .container4{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  height: 400px;
+  
+  
+}
+
+.why .container4 .card_why{
+  height: 250px;
+  width: 250px;
+  border-radius: 30px;
+  border: 1px solid #000;
+  position: relative;
+  
+}
+
+.why .container4 .card_why p{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+.incsription3{
+  width: 180px;
+  height: 40px;
+  background-color: #7AAEC1;
+  outline: none;
+  border: none;
+  border-radius:70px;
+  color: #FFF;
+  position: absolute; 
+  font-size: 15px; 
+  font-weight: bolder;
+  left: 45%;
+  box-shadow: 0px 5px 5px 2px rgb(167, 164, 164);
+  cursor: pointer;
+}
+
+/* Section contact */
+
+.contact{
+  margin-top: 120px;
+}
+
+.contact .container5{
+  padding: 62px;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.contact form{
+  position: relative;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.contact form h1{
+  position: absolute;
+  top: -30px;
+  left: 15px;
+}
+
+.contact form input{
+  display: inline-block;
+  margin: 15px;
+  height: 50px;
+  width: 600px;
+  padding: 5px;
+  text-align: left;
+  outline: none;
+}
+
+.contact form .big{
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.contact form .big::placeholder{
+  position: absolute;
+  top: 10px;
+
+}
+
+
+
+#incsription4{
+  width: 150px;
+  height: 50px;
+  background-color: #7AAEC1;
+  outline: none;
+  border: none;
+  border-radius:10px;
+  color: #FFF;
+  box-shadow: 0px 5px 5px 2px rgb(187, 189, 189);
+  position: absolute;
+  font-size: 15px; 
+  font-weight: bolder;
+  bottom: -60px;
+  left: 15px;
+  cursor: pointer;
+}
+
+/* Div pour la map */
+
+.contact .container5 .map{
+  
+}
+
+
+/* Footer */
+
+footer{
+  margin-top: 80px;
+}
