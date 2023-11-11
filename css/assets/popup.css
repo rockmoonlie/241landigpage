@@ -38,13 +38,13 @@ body{
 	opacity: 0;
 	margin-left: 50px;
 	transition: all 1s ease;
-
+	height: 50vh;
 }
 .modal-popup.show .box{
 	opacity: 1;
 	margin-left: 0;
 }
-.modal-popup .box .img-area{
+.modal-popup .box {
 	flex:0 0 50%;
 	max-width: 50%;
 	position: relative;
@@ -69,6 +69,7 @@ body{
 	animation: zoomInOut 6s linear infinite;
 	z-index: -1;
 }
+
 
 @keyframes zoomInOut{
 	0%,100%{
