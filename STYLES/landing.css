@@ -20,6 +20,10 @@ a{
   
 }
 
+.navbar ul li a:hover{
+  color: #7AAEC1;
+}
+
 /* barre de navigation */
 
 header .navbar{
@@ -353,6 +357,9 @@ header .navbar img{
   left: 160px;
 }
 
+.call .container2 .txt_call .incsription2:hover{
+  background-color: #0F206D;
+}
 /* Section OFFRE */
 .offre{
   position: relative;
@@ -472,17 +479,19 @@ header .navbar img{
   height: 250px;
   width: 250px;
   border-radius: 30px;
-  border: 1px solid #000;
+  border: 1px solid #0F206D;
   position: relative;
   
 }
 
-.why .container4 .card_why p{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.why .container4 .card_why .txt_pause{
   font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .incsription3{
@@ -568,8 +577,16 @@ header .navbar img{
   cursor: pointer;
 }
 
+#incsription4:hover{
+  background-color: #0F206D;
+}
+
 /* Div pour la map */
 
+button:hover{
+  background-color: #0F206D;
+
+}
 
 /* Section partenaire */
 .part{
