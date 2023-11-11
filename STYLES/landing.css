@@ -217,7 +217,7 @@ header .navbar img{
   justify-content: space-around;
   align-items: center;
   gap: 50px;
-  background-image: url(../Images/bgi\ \(8\).jpg);
+  background-image: url(../../Images/bgi\ \(8\).jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -299,7 +299,7 @@ header .navbar img{
 
 .call{
   margin-top: 0px;
-  background-image: url(../Images/bgi\ \(6\).jpg);
+  background-image: url(../../Images/bgi\ \(6\).jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
