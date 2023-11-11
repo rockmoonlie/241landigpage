@@ -126,8 +126,61 @@ header .navbar img{
   font-size: 58px;
 }
 
-.titre h1{
-  font-size: 48px;
+.titre h1 span{
+  color: #7AAEC1;
+}
+
+.titre h2{
+  font-size: 28px;
+}
+
+.titre h2 span{
+  color: #7AAEC1;
+  font-size: 38px;
+}
+
+/* Animation du grand titre et du sous titre du header */
+
+.titre h1,h2{
+  animation: arrive 1s 0.75s ease-in forwards;
+}
+
+@keyframes arrive {
+  0%{
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Gratuit */
+.titre h2 .hop{
+  color: #fb1616;
+  font-size: 38px;
+  display: inline-block;
+  animation: hop 1s  ease-in 2.75s forwards alternate infinite;
+}
+
+/* animation de GRATUIT */
+
+@keyframes hop {
+  0%{
+    transform: rotate(5deg);
+
+  }
+
+  45%{
+    transform: rotate(-5deg);
+  }
+
+  75%{
+    transform: rotateY(0deg);
+  }
+  
 }
 /* bouton du hero */
 
@@ -370,6 +423,11 @@ header .navbar img{
 .container3 .card .card1{
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
 }
 
 .container3 .card .card2{
@@ -377,12 +435,18 @@ header .navbar img{
   border-bottom-right-radius: 50px;
   position: relative;
   top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
 }
 
 /* Section pourquoi vous inscrire */
 
 .why{
   margin-top: 80px;
+  font-size: 21px;
 }
 
 .why h1 span{
@@ -506,13 +570,72 @@ header .navbar img{
 
 /* Div pour la map */
 
-.contact .container5 .map{
+
+/* Section partenaire */
+.part{
+  margin-top: 50px;
+  height: 400px;
+}
+
+/* Titre des partenaires */
+
+.part h1{
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 80px;
+}
+
+.part h1 span{
+  color: #7AAEC1;
+}
+
+/* Conteneur des partenaires */
+.part .container6{
+  display: flex;
+  gap: 50px;
+  overflow: hidden;
+
+}
+
+.part .container6 .part_img{
+  height: 100px;
+  width: 150px;
+  animation: slider 20s ease-in-out 1.5s alternate infinite;
+  transition: transform 2s;
   
+}
+
+/* animation du slider */
+
+@keyframes slider {
+  0%{
+    transform: translateX(0px);
+
+  }
+
+  25%{
+    transform: translateX(-150px);
+  }
+  50%{
+    transform: translateX(-300px);
+  }
+  75%{
+    transform: translateX(-450px);
+  }
+  100%{
+    transform: translateX(-600px);
+  }
+  
+}
+
+.part .container6 .part_img img{
+  height: 100px;
+  width: 150px;
+  object-fit: contain;
 }
 
 
 /* Footer */
 
-footer{
-  margin-top: 80px;
-}
+
