@@ -13628,3 +13628,14 @@ body {
 .clearfix:after {
     clear: both;
 }
+
+button{
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background-color: #0f206d;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
