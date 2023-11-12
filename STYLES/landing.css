@@ -655,4 +655,328 @@ button:hover{
 
 /* Footer */
 
+footer {
+  padding: 80px 0 0 0;
+  background: #232323;
+  color: #fff;
+  position: relative;
+}
+footer .container .row .col-sm-3 .widget:last-child {
+  margin-bottom: 0;
+}
+footer .widget {
+  margin-bottom: 50px;
+}
+footer .widget .widget-title h2 {
+  font-size: 20px;
+  color: #87ceeb;
+  margin: 5px 0 30px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+footer .widget .widget-title img {
+  margin-bottom: 15px;
+}
+footer .widget.about-widget .widget-content p {
+  color: #fff;
+}
+footer .widget.about-widget .widget-content ul {
+  margin-top: 25px;
+}
+footer .widget.about-widget .widget-content ul li {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #39534C;
+}
+footer .widget.about-widget .widget-content ul li i {
+  display: inline-block;
+  padding-right: 5px;
+  font-size: 16px;
+  color: #87ceeb;
+}
+footer .widget.footer-social .widget-content ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+footer .widget.footer-social .widget-content ul li:last-child {
+  margin-right: 0;
+}
+footer .widget.footer-social .widget-content ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+footer .widget.footer-social .widget-content ul li a:hover {
+  color: #87ceeb;
+}
+footer .widget.links .widget-content ul li {
+  margin-bottom: 20px;
+}
+footer .widget.links .widget-content ul li:last-child {
+  margin-bottom: 0;
+}
+footer .widget.links .widget-content ul li a {
+  color: #fff;
+}
+footer .widget.links .widget-content ul li a:hover {
+  color: #80CD36;
+}
+footer .widget.latest-news .widget-content .news-single {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #39534C;
+}
+footer .widget.latest-news .widget-content .news-single:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border: 0 none;
+}
+footer .widget.latest-news .widget-content .news-single .news-thumb {
+  display: table-cell;
+  vertical-align: top;
+}
+footer .widget.latest-news .widget-content .news-single .news-excerpt {
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 20px;
+}
+footer .widget.latest-news .widget-content .news-single .news-excerpt h3 {
+  margin: -5px 0 5px 0;
+}
+footer .widget.latest-news .widget-content .news-single .news-excerpt h3 a {
+  font-size: 15px;
+  color: #fff;
+  font-weight: normal;
+  text-transform: none;
+}
+footer .widget.latest-news .widget-content .news-single .news-excerpt h3 a:hover {
+  color: #87ceed;
+}
+footer .widget.latest-news .widget-content .news-single .news-excerpt span {
+  font-size: 12px;
+  color: #6b6b6b;
+}
+footer .widget.contact-widget .widget-content form {
+  position: relative;
+}
+footer .widget.contact-widget .widget-content form input {
+  height: 35px;
+  border: 1px solid #39534c;
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-shadow: none;
+}
+footer .widget.contact-widget .widget-content form textarea {
+  border: 1px solid #39534c;
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 5px;
+  margin-bottom: 15px;
+  box-shadow: none;
+  resize: none;
+  height: 100px;
+}
+footer .widget.contact-widget .widget-content form input,
+footer .widget.contact-widget .widget-content form textarea {
+  transition: 0.3s ease;
+}
+footer .widget.contact-widget .widget-content form input:focus,
+footer .widget.contact-widget .widget-content form textarea:focus {
+  border-color: #fff;
+}
+footer .widget.contact-widget .widget-content form button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 4.5px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #80CD36;
+  border: 0 none;
+}
+footer .widget.subscribe .widget-content p {
+  color: #fff;
+}
+footer .widget.subscribe .widget-content form {
+  position: relative;
+  margin-top: 20px;
+}
+footer .widget.subscribe .widget-content form input {
+  border: 1px solid #39534c;
+  display: block;
+  width: 100%;
+  background: transparent;
+  padding: 5px 70px 5px 5px;
+  margin-bottom: 15px;
+  box-shadow: none;
+  resize: none;
+  height: 35px;
+  transition: 0.3s ease;
+}
+footer .widget.subscribe .widget-content form input:focus {
+  border-color: #fff;
+}
+footer .widget.subscribe .widget-content form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 5px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #80CD36;
+  border: 2px solid #80CD36;
+}
+
+
+/* Footer Bottom */
+.footer-bottom {
+  background: #2d3e50;
+}
+.footer-bottom .footer-bottom-inner {
+  border-top: 1px solid #39534c;
+  padding: 35px 0;
+}
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-family: "Roboto Slab", serif;
+  margin: 0;
+  font-weight: 300;
+}
+.footer-bottom p#back-top {
+  text-align: right;
+  margin-bottom: 0;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 10;
+}
+.footer-bottom p#back-top a {
+  background: #323232;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  height: 35px;
+  text-align: center;
+  width: 35px;
+  padding-top: 3px;
+}
+.footer-bottom p#back-top a:hover {
+  background: #80CD36;
+  border-color: #80CD36;
+  color: #fff;
+}
+.footer-bottom.footer-bottom-default .footer-bottom-inner {
+  border-top: 0;
+}
+.footer-bottom ul.footer-menu {
+  text-align: right;
+  margin-bottom: 0;
+}
+.footer-bottom ul.footer-menu li {
+  display: inline-block;
+  padding-right: 15px;
+}
+.footer-bottom ul.footer-menu li:last-child {
+  padding-right: 0;
+}
+.footer-bottom ul.footer-menu li a {
+  color: inherit;
+  opacity: .7;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer-bottom ul.footer-menu li a:hover {
+  color: #80CD36;
+}
+
+.footer-style02 {
+  padding-top: 0;
+  overflow: hidden;
+  position: relative;
+}
+.footer-style02:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: #87ceeb;
+}
+.footer-style02 .footer-top-subscribe {
+  padding: 35px 0;
+  margin-bottom: 80px;
+  background: none;
+  padding: 25px 0;
+}
+.footer-style02 .footer-top-subscribe form .form-group {
+  margin-bottom: 0;
+}
+.footer-style02 .footer-top-subscribe form .form-group input {
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  background: transparent;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  padding: 0 30px;
+  width: 100%;
+}
+.footer-style02 .footer-top-subscribe form .form-group button {
+  background: transparent;
+  border: 2px solid #fff;
+  height: 50px;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: "Roboto Slab", serif;
+  display: block;
+  padding: 0 10px;
+  color: #fff;
+  transition: 0.3s ease;
+  border-radius: 3px;
+}
+.footer-style02 .footer-top-subscribe form .form-group button:hover {
+  color: #80CD36;
+  background: #fff;
+}
+.footer-style02 .special-widget {
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+}
+.footer-style02 .special-widget:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4000px;
+  background: #191919;
+  z-index: -1;
+}
+.footer-style02 .widget.opening-hour ul li {
+  padding-bottom: 10px;
+}
+.footer-style02 .widget.opening-hour ul li:last-child {
+  padding-bottom: 0;
+}
+.footer-style02 .widget.opening-hour ul li span:last-child {
+  float: right;
+}
+
+
+.footer-bottom {
+  background: #1b1b1b;
+}
+
+
 
